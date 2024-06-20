@@ -1,0 +1,59 @@
+1- LO PRIMERO QUE HAY QUE TENER ES UNA O MAS EMPRESAS CARGADAS y si ya la tenemos, te muestra los atributos de la empresa, en caso que no la tengamos, deberias obligatoriamente cargarla 
+
+    private $idempresa;//SQL SE INCREMENTA AUTOMATICAMENTE
+    private $enombre;//SQL 
+    private $edireccion;//SQL
+    private $colViaje; esto se genera cuando cargamos un viaje -> funcion para agregar viajes a la coleccion
+    private $mensajeoperacion;
+
+2- UNA VEZ CARGADA LA EMPREASA ,TENEMOS EL MENU DE MODIFICACION ELIMINIACION, LISTAR O SALIR, DENTRO DE ESTE MENU TENDRIAMOS QUE TENER LA OPCION DE CARGAR UN VIAJE 
+
+echo "***************\nMenú de Opciones\n***************\n";
+    echo "1. Cargar una Empresa\n";
+    echo "2. Modificar una Empresa\n";
+    echo "3. Eliminar una Empresa\n";
+    echo "4. Listar Empresas\n"; // Esto muestra la lista de empresas, aunque originalmente no lo pedías.
+    echo "5. cargar responsable :" //primero ingresar responsable
+	
+    echo "6. cargar viaje ";
+    echo " 7. cargar pasajeros :" ;
+
+    echo "0. Salir\n";
+
+todas las funciones comprobamos que funcionen correctamente
+
+3- EN CARGAR VIAJE  MOSTRAR UN NUEVO MENU CON ESTAS OPCIONES  solo si  esta cargado el responsable, en caso contrario, cargar responsable
+    echo "1. Cargar una Viaje\n";
+echo "ingrese destino de viaje..."
+
+echo "ingrese el responsable (chofer)"
+echo "ingrese el dni del responsable: "
+leer $dniRespo
+if ($dniResp !== dniResponsable(base de datos)){
+	mensaje->el dni ingresado no se encuentra en la lista de responsable
+	mensaje-> cargelo o utilice un dni valido.
+
+	termina la instruccion y te lleva al menu principal
+	
+	
+
+}else {
+	en caso de que este todo bien, sigue carganodo los demas atributos.
+	
+}
+
+
+cargar pasjeros.solo si esta cargado el viaje en caso de que el viaje no este cargado, previamente deberia cargarse el viaje y luego el pasajero, si esta cargado el viaje, pedir informacion del pasajero para poder cargarlo con sus atributos y ademas pedir  el id de viaje 
+
+
+
+
+
+    echo "2. Modificar una Viaje\n";
+    echo "3. Eliminar una Viaje\n";
+    echo "4. Listar viaje\n"; // Esto muestra la lista de empresas, aunque originalmente no lo pedías.
+ 
+    echo "0. Volver al menu principal\n";
+
+
+
